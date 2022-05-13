@@ -1,0 +1,60 @@
+
+.skeleton {
+    max-width: 100vw;
+}
+
+.skeleton.image {
+    width: 700px;
+    height: 490px;
+    background-color: #ddd;
+    border-radius: 12px;
+}
+
+.skeleton.airing-title {
+    width: 180px;
+    height: 25px;
+    background-color: #ddd;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.skeleton.airing-img {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 12px;
+}
+
+.skeleton.airing-detail {
+    width: 180px;
+    height: 25px;
+    background-color: #ddd;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.skeleton.button {
+    width: 100px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.skeleton.button2 {
+    width: 100px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+}
+
+.skeleton.movie{
+    width: 250px;
+    height: 350px;
+    background-color: #ddd;
+    margin-right: 21px;
+    border-radius: 10px;
+    margin-top: 20px;
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;500&display=swap');
+
+$redColor: rgba(214, 31, 38, 1);
+$activeInput: #1a73e8;
+$interFont: 'Inter', sans-serif;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  position: fixed;
+  padding: 0 100px;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  z-index: 100;
+
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .logo {
+      color: $redColor;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: $interFont;
+    }
+
+    ul {
+      display: flex;
+      .Link {
+        color: black;
+        text-decoration: none;
+      }
+      .active {
+        color: $redColor;
+      }
+      li {
+        list-style: none;
+        margin: 0 10px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: $interFont;
+        &:hover {
+          color: $redColor;
+        }
+      }
+    }
+  }
+
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 39%;
+    .inputWrapper{
+      position: relative;
+      .inputNavbar {
+        display: flex;
+        position: relative;
+        align-items: center;
+        height: 37px;
+        width: 230px;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 8px;
+        border: 1px solid grey;
+        box-sizing: border-box;
+        padding: 15px;
+      }
+      
+      .inputNavbar:focus {
+        background: #f0f0f0;
+        outline: none;
+        border: 1px solid $activeInput;
+        box-shadow: 0 0 3px $activeInput;
+      }
+
+      .search-icon {
+        position: absolute;
+        right: 15px;
+        top: 11px;
+        color: grey;
+      }
+    }
+      
+    .results {
+      max-height: 500px;
+      width: 100%;
+      margin-left: 90px;
+      margin-right: 90px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .tmdbIcons {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .scroll-y {
+      overflow-y: scroll;
+    }
+    .item {
+      width: 500px;
+      color: black;
+      display: flex;
+      margin: 10px;
+      align-items: center;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0px 1px 5px rgba(128, 128, 128, 0.5);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.3s;
+
+      img {
+        border-radius: 10px;
+        margin-right: 20px;
+      }
+
+      &:hover {
+        background-color: rgba(214, 31, 38, 1);
+        color: white;
+        transform: translateY(-10px) scale(101%);
+      }
+    }
+    .search-list {
+      position: absolute;
+      display: flex;
+      left: 0;
+      top: 100px;
+      background-color: white;
+      width: 100%;
+      padding: 10px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+
+      .loginSignupNav {
+        text-decoration: none;
+        color: black;
+        list-style: none;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 10px;
+        width: 75px;
+        height: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        transition: 0.3s;
+        &:hover {
+          background-color: rgba(214, 31, 38, 1);
+        color: white;
+
+        }
+        &:nth-child(2) {
+          background: $redColor;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 75px;
+          height: 43px;
+          border-radius: 8px;
+          &:hover {
+            border: 1px solid grey;
+            background-color: white;
+            color: rgba(214, 31, 38, 1);
+          }
+        }
+      }
+    }
+  }
+}

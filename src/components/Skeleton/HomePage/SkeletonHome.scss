@@ -1,0 +1,32 @@
+.skeleton-home {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    overflow: hidden;
+
+    & .img-wrapper {
+        width: 700px;
+        height: 490px;
+        position: relative;
+        overflow: hidden;
+        margin-right: 40px;
+    }
+
+    & .airing-content {
+        position: relative;
+        overflow: hidden;
+
+        & .box {
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+            padding: 5px;
+            
+        }
+    }
+}
+
+
+

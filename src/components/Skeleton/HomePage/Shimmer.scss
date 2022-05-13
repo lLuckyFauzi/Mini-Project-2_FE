@@ -1,0 +1,23 @@
+.shimmer-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 700px;
+    height: 490px;
+    animation: loading 2.5s infinite;
+}
+
+.shimmer {
+    width: 50%;
+    height: 490px;
+    background-color: rgba(246, 240, 240, 0.842);
+    border-radius: 10px;
+    transform: skewX(-10deg);
+    box-shadow: 0 0 30px 30px rgba(255, 255,255,0.05);
+}
+
+@keyframes loading {
+    0%{ transform: translateX(-150%)}
+    50%{transform: translateX(-60%)}
+    100%{transform: translateX(150%)}
+}

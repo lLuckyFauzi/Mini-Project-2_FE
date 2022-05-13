@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;500&display=swap');
+
+//Colors
+$SecondaryColor: red;
+$primaryColor: white;
+
+//Typograpy
+$InterFont: 'Inter', sans-serif;
+$ExtraLight: 200;
+$Light: 300;
+$Regular: 400;
+$Medium: 500;
+$SemiBold: 600;
+$Bold: 700;
+
+.list-film{
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    position: relative;
+    
+
+    & .title {
+        font-family: $InterFont;
+        font-weight: $Bold;
+        font-size: 28px;
+        color: #40444C;
+        margin-bottom: 29px;
+    }
+
+    & .list-film-carousel {
+
+        & .inner-carousel {
+            padding: 10px;
+
+            & .slick-slider {
+                width: 104%;
+                position: relative;
+                left: -10px;
+                & .slick-prev, .slick-next  {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: rgb(0, 114, 214);
+                    transition: 0.3s;
+                    z-index: 25;
+                    opacity: 0;
+
+                }
+                & .slick-prev:hover, .slick-next:hover {
+                    color: rgb(255, 0, 0);
+                }
+                & .slick-prev::before, .slick-next::before {
+                    z-index: 30;
+                    color: #40444C;
+                }
+                
+                & .slick-next {
+                    transform: translateX(-60%) translateY(-20%);
+                }
+                & .slick-prev {
+                    transform: translateX(5%) translateY(-20%);
+                }
+            }
+            & .item {
+                position: relative;
+
+                & .info-item {
+                    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.589));
+                    width: 250px;
+                    border-radius: 12px;
+                    height: 330px;
+                    position: absolute;
+                    opacity: 0;
+                    transition: 0.4s;
+                    cursor: pointer;
+                    & .item-title {
+                        position: absolute;
+                        bottom: 0;
+                        padding: 10px;
+    
+                        & p {
+                            color: $primaryColor;
+                            font-family: $InterFont;
+                            font-weight: $Bold;
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                & .info-item:hover {
+                    opacity: 1;
+                }
+
+                & .img {
+                    border-radius: 12px;
+                    z-index: -5;
+                    pointer-events: none;
+                    position: relative;
+                }
+            }
+
+        }
+
+    }
+
+
+    .list-film-button {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        right: 0;
+        top: 0;
+        color: red;
+        height: 44px;
+        padding: 8px;
+        border: none;
+        background-color: rgba(214, 31, 38, 0.1);
+        border-radius: 8px;
+        font-size: 14px;
+        font-family: $InterFont;
+        font-weight: $Bold;
+        transition: 0.3s;
+        cursor: pointer;
+
+        & .right-icons {
+            width: 14px;
+            height: 12px;
+        }
+
+        
+    }
+
+    .list-film-button:hover {
+        background-color: rgba(214, 31, 37, 0.62);
+        color: white;
+    }
+    
+    .right-icon, .left-icon {
+        position: absolute;
+        display: block;
+        right: -24px;
+        top: 230px;
+        width: 25px;
+        padding: 10px;
+        height: 25px;
+        border-radius: 50%;
+        color: red;
+        transition: 0.3s;
+        cursor: pointer;
+        z-index: 24;
+        background-color: white;
+        box-shadow: 0 0 7px rgba(0,0,0,0.3);
+    }
+    
+    .left-icon {
+        left: -25px;
+    } 
+}

@@ -1,0 +1,25 @@
+.loading-wrapper {
+    max-width: 100vw;
+    min-height: 500vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.498);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    overflow: hidden;
+    
+
+    .container {
+        max-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: fixed;
+        right: 0;
+        left: 0;
+    }
+}

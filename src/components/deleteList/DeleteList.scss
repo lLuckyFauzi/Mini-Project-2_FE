@@ -1,0 +1,28 @@
+.delete-list {
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 210px;
+    height: 35px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #a7a6a6;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:disabled {
+      display: none;
+    }
+
+    &:hover{
+      background-color: #d61f26;
+      color: white;
+    }
+  }
+}
+
+
